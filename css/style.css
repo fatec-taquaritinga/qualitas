@@ -1,6 +1,6 @@
 @font-face{
-  font-family: "Avenir",;
-  src: url('../font/AvenirLTStd-Book.otf');
+  font-family: "Avenir";
+  src: url('../font/Avenir.otf');
 }
 
 *, *:before, *:after{
@@ -9,7 +9,7 @@
 }
 
 body{
-  font: 400 1em/1.4 Avenir, Sans-serif;
+  font: 400 1em/1.4 Avenir, sans-serif;
 }
 
 header{
@@ -34,7 +34,7 @@ h1, h2, h3, h4{
 
 nav{
   width: 200px;
-  background: red;
+  background: #181915;
   height: 100vh;
   position: fixed;
   top: 0;
@@ -44,6 +44,7 @@ nav{
   transition: all .5s ease;
   z-index: 10;
   overflow-y: auto;
+  color: rgba(255,255,255,.87);
 }
 
 .logo{
@@ -64,7 +65,7 @@ ul{
   width: 55px;
   height: 55px;
   padding: 5px;
-  background: blue;
+  background: #0073BE;
   border-radius: 3px;
   -webkit-transition: all .5s ease;
   transition: all .5s ease;
@@ -132,15 +133,15 @@ nav li{
   width: 100%;
   padding: 10px;
   text-align: center;
-  border-left: 4px solid red;
+  border-left: 4px solid #181915;
   -webkit-transition: all .5s ease;
   transition: all .5s ease;
   cursor: pointer;
 }
 
 nav li:hover{
-  background: darkred;
-  border-left-color: brown;
+  background: #272A26;
+  border-left-color: #666;
 }
 
 nav img{
@@ -163,6 +164,7 @@ nav img{
   transform: scaleY(0);
   -webkit-transition: all .5s ease;
   transition: all .5s ease;
+  box-shadow: 0 1px 1px 0 rgba(0,0,0,.37);
 }
 
 .fixo.show{
