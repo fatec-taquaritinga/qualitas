@@ -7,10 +7,10 @@ menu.onclick = function(){
 }
 
 onscroll = function(e){
-  if(window.scrollY > innerHeight && !fixo.classList.contains("show")){
+  if((window.scrollY + 80) > innerHeight && !fixo.classList.contains("show")){
     fixo.classList.add("show");
   }
-  else if(window.scrollY < innerHeight && fixo.classList.contains("show")){
+  else if((window.scrollY + 80) < innerHeight && fixo.classList.contains("show")){
     fixo.classList.remove("show");
   }
 }
