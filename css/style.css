@@ -1,0 +1,26 @@
+*, *:before, *:after{
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header{
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+h1, h2{
+  text-align: center;
+}
+
+.logo{
+  width: 40%;
+  min-width: 250px;
+}
