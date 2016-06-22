@@ -24,12 +24,26 @@ header{
   -ms-flex-align: center;
   align-items: center;
   overflow-x: hidden;
+  position: relative;
+}
+
+video{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  top: 0%;
+  z-index: 5;
+  -webkit-filter: contrast(.8);
+  filter: contrast(.8);
 }
 
 h1, h2, h3, h4{
   width: 100%;
   text-align: center;
   margin-bottom: 15px;
+  z-index: 10;
 }
 
 nav{
@@ -50,6 +64,7 @@ nav{
 .logo{
   width: 40%;
   min-width: 250px;
+  z-index: 10;
 }
 
 ul{
@@ -65,7 +80,8 @@ ul{
   width: 55px;
   height: 55px;
   padding: 5px;
-  background: #0073BE;
+  background: transparent;
+  border: 2px solid rgba(255,255,255,.8);
   border-radius: 3px;
   -webkit-transition: all .5s ease;
   transition: all .5s ease;
@@ -77,8 +93,21 @@ ul{
   right: 210px;
 }
 
+.menu.fixed{
+  border: 2px solid #0073BE;
+  background: #efefef;
+}
+
 .menu.show + nav{
   right: 0;
+}
+
+.menu:hover{
+  background: rgba(255,255,255,.3);
+}
+
+.menu.fixed:hover{
+  background: #C8D5B9;
 }
 
 .controle{
@@ -98,18 +127,22 @@ ul{
   transition: all .5s ease;
 }
 
+.menu.fixed .faixa, .menu.fixed .faixa:after, .menu.fixed .faixa:before{
+  background: #0073BE;
+}
+
 .faixa:after, .faixa:before{
   content: '';
 }
 
 .faixa:after{
-  top: -40px;
+  top: -36px;
   -webkit-transform-origin: 0% 0%;
   transform-origin: 0% 0%;
 }
 
 .faixa:before{
-  top: -20px;
+  top: -18px;
   -webkit-transform-origin: 0% 100%;
   transform-origin: 0% 100%;
 }
@@ -137,6 +170,7 @@ nav li{
   -webkit-transition: all .5s ease;
   transition: all .5s ease;
   cursor: pointer;
+  font-size: 1.15em;
 }
 
 nav li:hover{
@@ -182,17 +216,47 @@ section{
   padding: 1em;
 }
 
+#apresentacao, #objetivos{
+  padding: 2em;
+}
+
+#objetivos{
+  background: url('../img/objetivos.jpg') center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#objetivos h2{
+  color: #fff;
+  text-shadow: 0 0 2px rgba(0,0,0,.7);
+}
+
+#objetivos .item{
+  background: rgba(255,255,255,.7);
+  border: 3px solid rgba(255,255,255,.9);
+
+}
+
+h2{
+  font-size: 1.7em;
+}
+
+.divisoria{
+  width: 60%;
+  margin-left: 20%;
+}
+
 .texto{
   width: 60%;
   margin-left: 20%;
   text-align: center;
   margin-bottom: 10px;
+  font-size: 1.25em;
 }
 
 .container{
   width: 80%;
   margin-left: 10%;
-  background: lightgray;
   padding: .5em;
   border-radius: 5px;
 }
@@ -214,18 +278,20 @@ div.container{
   text-align: center;
   padding: 1em;
   border-radius: 5px;
-  box-shadow: 0 3px 1px 1px rgba(0,0,0,.37);
+  box-shadow: 0 2px 1px 1px rgba(0,0,0,.2);
   background: gray;
   margin-bottom: 10px;
 }
 
 .item{
   width: 45%;
+  font-size: 1.15em;
 }
 
 #fundamentacao li{
   padding: 1em;
   border-bottom: 2px solid #212121;
+  font-size: 1.15em;
 }
 
 footer{
@@ -233,6 +299,13 @@ footer{
 }
 
 @media (max-width: 700px){
+  #apresentacao, #objetivos{
+    padding: 1em;
+  }
+  .divisoria{
+    width: 100%;
+    margin-left: 0;
+  }
   .container{
     width: 100%;
     margin-left: 0;

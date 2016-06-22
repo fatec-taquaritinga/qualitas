@@ -9,9 +9,11 @@ menu.onclick = function(){
 onscroll = function(e){
   if((window.scrollY + 80) > innerHeight && !fixo.classList.contains("show")){
     fixo.classList.add("show");
+    menu.classList.add("fixed");
   }
   else if((window.scrollY + 80) < innerHeight && fixo.classList.contains("show")){
     fixo.classList.remove("show");
+    menu.classList.remove("fixed");
   }
 }
 
