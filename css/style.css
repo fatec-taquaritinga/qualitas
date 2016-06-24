@@ -226,15 +226,15 @@ section{
   background-attachment: fixed;
 }
 
-#objetivos h2{
-  color: #fff;
-  text-shadow: 0 0 2px rgba(0,0,0,.7);
+#objetivos h2, #pesquisa h2, #pesquisa .texto{
+  color: rgba(255,255,255,.87);
+  text-shadow: 0 0 1px rgba(0,0,0,.7);
 }
 
-#objetivos .item{
-  background: rgba(255,255,255,.7);
-  border: 3px solid rgba(255,255,255,.9);
-
+#pesquisa{
+  background: url('../img/temas.jpg') center center;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 h2{
@@ -251,7 +251,7 @@ h2{
   margin-left: 20%;
   text-align: center;
   margin-bottom: 10px;
-  font-size: 1.25em;
+  font-size: 1.3em;
 }
 
 .container{
@@ -278,8 +278,8 @@ div.container{
   text-align: center;
   padding: 1em;
   border-radius: 5px;
-  box-shadow: 0 2px 1px 1px rgba(0,0,0,.2);
-  background: gray;
+  background: rgba(255,255,255,.7);
+  border: 3px solid rgba(255,255,255,.9);
   margin-bottom: 10px;
 }
 
@@ -294,8 +294,33 @@ div.container{
   font-size: 1.15em;
 }
 
+a{
+  text-decoration: none;
+  color: #0073be;
+  text-align: center;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+a:hover{
+  color: #272a26;
+}
+
+i.lattes{
+  width: 20px;
+  height: 20px;
+  position: relative;
+  background-size: cover;
+  margin: 0 4px;
+  display: inline-block;
+  top: 3px;
+  background-image: url(../img/lattes.svg);
+}
+
 footer{
   padding: 1em;
+  background: #181915;
+  color: rgba(255,255,255,.87);
 }
 
 @media (max-width: 700px){
