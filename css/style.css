@@ -10,7 +10,7 @@
 
 body{
   font: 400 1em/1.4 Avenir, sans-serif;
-  
+
 }
 main {color:rgba(0,0,0,0.87);}
 
@@ -288,28 +288,11 @@ div.container{
 .item{
   width: 45%;
   font-size: 1.15em;
-
 }
-
-
-    
-
-.item img{
-    width: 20%;
- 
-    
-}
-
-
-
-
 
 #objetivos .texto{
     color:white;
-    
 }
-
-
 
 #fundamentacao li{
   padding: 1em;
