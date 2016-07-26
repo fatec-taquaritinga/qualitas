@@ -10,7 +10,7 @@
         <header>
             <video src="video/fundo.mp4" autoplay="" loop=""></video>
             <h1><a href="index.html"><img src="img/logo.svg" class="logo"></a></h1>
-            <div class="menu fixed">
+            <div class="menu">
                 <div class="controle">
                     <div class="faixa"></div>
                 </div>
@@ -18,17 +18,14 @@
             <nav>
                 <img src="img/simbolo.svg">
                 <ul>
-                    <li>Apresentação</li>
-                    <li>Objetivos</li>
-                    <li>Fundamentação</li>
-                    <li>Temas de pesquisa</li>
-                    <li>Coordenação</li>
-                    <li>Colaboração</li>
-                    <li>Participações e Publicações</li>
-                    <li>Nossa Biblioteca</li>
+                    <a data-scroll href="#apresentacao"><li>Apresentação</li></a>
+                    <a data-scroll="" href="#objetivos"><li>Objetivos</li></a>
+                    <a data-scroll="" href="#fundamentacao"><li>Fundamentação</li></a>
+                    <a data-scroll="" href="#pesquisa"><li>Temas de pesquisa</li></a>
+                    <a data-scroll="" href="#coordenacao"><li>Coordenação</li></a>
                 </ul>
             </nav>
-            <div class="fixo show">
+            <div class="fixo">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 652 155.9">
                     <style>
                         .a {
@@ -107,9 +104,7 @@
                 <a href="https://docs.google.com/forms/d/1nL50Vu1czo0W1q7H-5J9fnaGbc5igDNFUCXaJ_HAUMY/viewform" target="_blank">
                     <button>Inscreva-se</button>
                 </a>
-                <a href="pdf/Edital%20Processo%20Seletivo%202016%20-%20Grupo%20de%20Pesquisa%20Qualidade.pdf" target="_blank" class="texto margem">
-                    <p class="edital">Confira também o edital aqui.</p>
-                </a>
+                <p class="texto margem">Confira também o edital para participar do grupo de pesquisas <a href="pdf/Edital%20Processo%20Seletivo%202016%20-%20Grupo%20de%20Pesquisa%20Qualidade.pdf" target="_blank" class="edital">aqui</a>.</p>
             </section>
             <section id="objetivos">
                 <h2>Objetivos do Qualitas</h2>
@@ -181,7 +176,6 @@
                 </div>
             </section>
             <section id="coordenacao">
-                <img src="img/FotoAngelita.JPG">
                 <h3>Profª. Drª. Angelita Moutin Segoria Gasparotto</h3>
                 <img src="img/div.svg" class="divisoria">
                 <p class="texto">Possui graduação em Tecnologia de Processamento de Dados (1997) e especialização em Educação (1999) pelo Centro Estadual de Educação Tecnológica Paula Souza. É Mestre na área de Sistemas de Apoio à Decisão, pelo Departamento de Engenharia de Produção da Escola de Engenharia de São Carlos - USP (2001). Possui Doutorado na área de Processos e Gestão de Operações, pelo Departamento de Engenharia de Produção, da Escola de Engenharia de São Carlos - USP (2013). É docente da Faculdade de Tecnologia de Taquaritinga e do Curso de Pós-Graduação da Faculdade Anhanguera de Matão. Suas áreas de interesse incluem gestão da qualidade, modelagem de processos e redes colaborativas.</p>
@@ -192,6 +186,7 @@
         <footer>
             <h4>Grupo de Pesquisa em Gestão da Qualidade</h4>
             <p class="texto"><strong>Fatec</strong> Taquaritinga</p>
+            <script src="js/scrollTo.js"></script>
             <script src="js/script.js"></script>
         </footer>
     </body>
