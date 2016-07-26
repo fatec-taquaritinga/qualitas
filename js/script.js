@@ -31,6 +31,7 @@ onload = function(){
 for(var i = 0; i < link.length; i++){
     link[i].onclick = function(){
         smoothScroll(this.getAttribute("href").split("#")[1]);
+        menu.classList.toggle("show");
     }
 }
 
@@ -62,7 +63,7 @@ function smoothScroll(eID) {
     if (distance < 100) {
         scrollTo(0, stopY); return;
     }
-    var speed = Math.round(distance / 50);
+    var speed = Math.round(distance / 40);
     if (speed >= 20) speed = 20;
     var step = Math.round(distance / 25);
     var leapY = stopY > startY ? startY + step : startY - step;
