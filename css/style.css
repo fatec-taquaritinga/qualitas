@@ -59,8 +59,6 @@ nav{
     top: 0;
     right: -200px;
     padding: 1em 0;
-    -webkit-transition: all .5s ease;
-    transition: all .5s ease;
     z-index: 20;
     overflow-y: auto;
     color: rgba(255,255,255,.87);
@@ -88,8 +86,6 @@ ul{
     background: transparent;
     border: 2px solid rgba(255,255,255,.8);
     border-radius: 3px;
-    -webkit-transition: all .5s ease;
-    transition: all .5s ease;
     z-index: 15;
     cursor: pointer;
 }
@@ -128,8 +124,6 @@ ul{
     height: 5px;
     border-radius: 3px;
     bottom: 0;
-    -webkit-transition: all .5s ease;
-    transition: all .5s ease;
 }
 
 .menu.fixed .faixa, .menu.fixed .faixa:after, .menu.fixed .faixa:before{
@@ -202,8 +196,6 @@ nav img{
     height: 0;
     -webkit-transform: scaleY(0);
     transform: scaleY(0);
-    -webkit-transition: all .5s ease;
-    transition: all .5s ease;
     box-shadow: 0 1px 1px 0 rgba(0,0,0,.37);
     z-index: 10;
 }
