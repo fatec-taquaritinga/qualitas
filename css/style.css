@@ -280,6 +280,17 @@ footer {
   padding: 5em 2em 4em;
 }
 
+#apresentacao ul {
+  padding: 2em 0 0;
+  list-style: square;
+  width: auto;
+}
+
+#apresentacao ul li {
+  display: list-item;
+  width: auto;
+}
+
 #objetivos {
   background: url('../img/objetivos.jpg') center center;
   background-size: cover;
@@ -328,7 +339,7 @@ h2 {
   flex-flow: wrap;
 }
 
-.texto+ .container {
+.texto + .container {
   padding-top: 2em;
 }
 
